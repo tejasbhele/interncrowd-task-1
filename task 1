@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>landing page</title>
+   <style type="text/css">
+      * {
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+      }
+
+      header {
+         width: 100%;
+         
+         font-family: sans-serif;
+      }
+
+      nav {
+         width: 100%;
+         height: 100px;
+         background: red;
+         color: black;
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+      }
+
+      .logo {
+         font-size: 2em;
+         letter-spacing: 2px;
+      }
+
+      .menu a {
+         text-decoration: none;
+         color: black;
+         padding: 10px 20px;
+         font-size: 20px;
+         position: relative;
+
+      }
+
+      .menu a:before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 0%;
+         height: 100%;
+         border-bottom: 2.5px solid black;
+         transition: 0.4s linear;
+      }
+
+      .menu a:hover:before {
+         width: 90%;
+      }
+
+      .login a {
+         text-decoration: none;
+         color: black;
+         padding: 10px 20px;
+         font-size: 20px;
+         background: white;
+         border-radius: 8px;
+         transition: 0.4s linear;
+      }
+
+      .login a:hover {
+         background: transparent;
+         border: 1px solid indianred;
+
+      }
+
+
+
+      .bck {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         height: 768px;
+         
+         align-items: center;
+      }
+
+      .bck::before{
+         content: "";
+         z-index: -1;
+         position: absolute;
+         height: 100%;
+         width: 100%;
+         background: url("zoro.jpg") no-repeat center center/cover;
+         opacity: 0.75;
+      }
+      
+
+      .h-txt {
+
+
+         text-align: center;
+         color: white;
+         text-shadow: 12px ;
+         font-weight: bold;
+         
+      }
+
+      .h-txt span {
+         Letter-spacing: 5px;
+         font-size: 1.5rem;
+         text-shadow: 2px 2px black;
+      }
+      h3{
+         text-shadow: 2px 2px black;
+      }
+      .h-txt h1 {
+         font-size: 3.5em;
+         text-shadow: 2px 2px black;
+      }
+
+      .h-txt a {
+         text-decoration: none;
+         background: indianred;
+         color: white;
+         padding: 10px 20px;
+         letter-spacing: 5px;
+         transition: 0.4s linear;
+      }
+
+      .h-txt a:hover {
+         background: transparent;
+         border: 1px solid indianred;
+
+      }
+   </style>
+</head>
+
+<body>
+   <header>
+      <nav>
+         <div class="logo">
+            ANIME-LAND
+         </div>
+         <div class="menu">
+            <a href="#">HOME</a>
+            <a href="#">Anime Lists</a>
+            <a href="#">New Seasons</a>
+            <a href="#">Movies</a>
+            <a href="#">Popular</a>
+         </div>
+         <div class="login">
+            <a href="#">LOGIN</a>
+
+      </nav>
+   </header>
+   <section class="bck">
+      
+      <div class="h-txt">
+         <span>WELCOME TO</span>
+         <h1>ANIME-LAND</h1>
+         <h3>A PLACE OF ADVENTURE</h3>
+         <br>
+         <a href="#">WATCH NOW</a>
+      </div>
+   </section>
+
+
+</body>
+
+</html>
